@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="advanced-grid">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Advanced Grid Example</title>
+    <link href="styles/bootstrap.min.css" rel="stylesheet"/>
+    <link href="styles/bootstrap-theme.min.css" rel="stylesheet"/>
+    <link href="styles/ui-grid-v3.1.1.css" rel="stylesheet" />
+    <link href="styles/main.css" rel="stylesheet"/>
+    <script src="scripts/jquery-2.2.4.min.js"></script>
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-route.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/ui-grid-v3.1.1.js"></script>
+</head>
+<body>
+<!-- Fixed navbar -->
+<nav class="navbar navbar-inverse ">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Advanced Grid</a>
+        </div>
+    </div>
+</nav>
+<div class="container theme-showcase" role="main">
+    <div>
+    <ng-view></ng-view>
+    </div>
+</div>
+<script src="scripts/main.js"></script>
+<script src="scripts/LoginController.js"></script>
+<script src="scripts/ItemsGridController.js"></script>
+</body>
+</html>
