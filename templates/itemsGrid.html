@@ -1,3 +1,20 @@
-<div class="well">
-    This is {{itemsGrid.name}}.
+<div>
+    <button id="refreshButton" type="button" class="btn btn-primary" ng-click="addRow()">Add Row</button>
+    <br>
+    <br>
+    <div id="grid1" class="itemGrid" ui-grid="gridOptions" ui-grid-cellNav ui-grid-edit ui-grid-resize-columns
+         ui-grid-pinning ui-grid-selection ui-grid-move-columns ui-grid-importer ui-grid-exporter ui-grid-grouping class="grid"></div>
+    <br>
+    <div ng-show="isSelectedRow">
+        <h3>Grid 2</h3>
+        <div id="grid1" class="itemGrid" ui-grid="gridOptions" ui-grid-cellNav ui-grid-edit ui-grid-resize-columns
+             ui-grid-pinning ui-grid-selection ui-grid-move-columns ui-grid-importer ui-grid-exporter ui-grid-grouping class="grid"></div>
+        <br>
+        <h3>Grid 3</h3>
+        <div id="grid1" class="itemGrid" ui-grid="gridOptions" ui-grid-cellNav ui-grid-edit ui-grid-resize-columns
+             ui-grid-pinning ui-grid-selection ui-grid-move-columns ui-grid-importer ui-grid-exporter ui-grid-grouping class="grid"></div>
+    </div>
+
+</div>
+
 </div>

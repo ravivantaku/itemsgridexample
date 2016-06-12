@@ -1,4 +1,4 @@
-angular.module("advanced-grid", ["ngRoute"]);
+angular.module("advanced-grid", ["ngRoute",'ui.grid', 'ui.grid.cellNav', 'ui.grid.edit', 'ui.grid.resizeColumns', 'ui.grid.pinning', 'ui.grid.selection', 'ui.grid.moveColumns', 'ui.grid.exporter', 'ui.grid.importer', 'ui.grid.grouping']);
 
 angular.module("advanced-grid")
 .config(function($routeProvider){
@@ -15,4 +15,4 @@ angular.module("advanced-grid")
                 controllerAs: "itemsGrid"
             })
             .otherwise("/");
-    })
+    });
